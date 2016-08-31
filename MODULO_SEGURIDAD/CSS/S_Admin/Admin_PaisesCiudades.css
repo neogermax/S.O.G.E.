@@ -1,0 +1,291 @@
+﻿/*--------------------------------------------------------------------------------------------*/
+/*------------------------------------- ESTILOS PAGINA PAISES_CIUDADES -------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+#Bar_Title_Principal
+{
+    background: -webkit-linear-gradient(#a900ff, #320167); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a900ff, #320167); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a900ff, #320167); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a900ff, #320167); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+    position: relative;
+    bottom: 225px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 830px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#DIV_Consuta_PC, #DIV_Crear_PC, #DIV_Modificar_PC, #DIV_Eliminar_PC
+{
+    background: -webkit-linear-gradient(#a900ff, #320167); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a900ff, #320167); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a900ff, #320167); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a900ff, #320167); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#DIV_Consuta_PC:hover, #DIV_Crear_PC:hover, #DIV_Modificar_PC:hover, #DIV_Eliminar_PC:hover
+{
+    background: -webkit-linear-gradient(#c054f7, #61546f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#c054f7, #61546f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#c054f7, #61546f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#c054f7, #61546f); /* Standard syntax (must be last) */
+    color: #000000;
+}
+
+.N_search, .N_create, .N_update, .N_delete
+{
+    display: none;
+}
+
+.I_search, .I_create, .I_update, .I_delete
+{
+    display: block;
+}
+
+#DIV_Consuta_PC:hover .N_search
+{
+    display: block;
+}
+
+#DIV_Consuta_PC:hover .I_search
+{
+    display: none;
+}
+
+#DIV_Crear_PC:hover .N_create
+{
+    display: block;
+}
+
+#DIV_Crear_PC:hover .I_create
+{
+    display: none;
+}
+
+#DIV_Modificar_PC:hover .N_update
+{
+    display: block;
+}
+
+#DIV_Modificar_PC:hover .I_update
+{
+    display: none;
+}
+
+#DIV_Eliminar_PC:hover .N_delete
+{
+    display: block;
+}
+
+#DIV_Eliminar_PC:hover .I_delete
+{
+    display: none;
+}
+
+#Bar_Title_PC
+{
+    background: -webkit-linear-gradient(#a900ff, #320167); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a900ff, #320167); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a900ff, #320167); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a900ff, #320167); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+    position: relative;
+    bottom: 225px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 830px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#block_search_PC
+{
+    border: solid #E8E8F7;
+    padding-left: 100px;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    background: -webkit-linear-gradient(#a900ff, #320167); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a900ff, #320167); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a900ff, #320167); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a900ff, #320167);
+}
+
+#Block_Insert_PC
+{
+    border: solid #E8E8F7;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    background: -webkit-linear-gradient(#a900ff, #320167); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a900ff, #320167); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a900ff, #320167); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a900ff, #320167);
+}
+
+.BtnPaises
+{
+    padding: 5px 2px 5px 2px;
+    border-radius: 7px;
+    border-color: White;
+    background: -webkit-linear-gradient(#2f0158, #452373); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#2f0158, #452373); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#2f0158, #452373); /* For Firefox 3.6 to 15 */
+    background: inear-gradient(#2f0158, #452373); /* Standard syntax (must be last) */
+    color: White;
+    width: 110px;
+}
+
+.BtnPaises:hover
+{
+    padding: 5px 2px 5px 2px;
+    border-radius: 7px;
+    border-color: White;
+    background: -webkit-linear-gradient(#260340, #070013); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#260340, #070013); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#260340, #070013); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#260340, #070013); /* Standard syntax (must be last) */
+    color: White;
+    width: 110px;
+}
+
+.SelectPaises
+{
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+    font-size: 14px;
+    padding: 5px 2px 5px 2px;
+    border-radius: 7px;
+    border-color: White;
+    background: -webkit-linear-gradient(#2f0158, #452373); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#2f0158, #452373); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#2f0158, #452373); /* For Firefox 3.6 to 15 */
+    background: inear-gradient(#2f0158, #452373); /* Standard syntax (must be last) */
+    color: White;
+    width: 200px;
+}
+
+.SelectPaises option
+{
+    background: #2f0158;
+    color: White;
+    border-radius: 7px;
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+    font-size: 14px;
+}
+
+.ui-widget-header
+{
+    border: 1px solid #7a00ff;
+    background: -webkit-linear-gradient(#a900ff, #320167); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a900ff, #320167); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a900ff, #320167); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a900ff, #320167);
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+{
+    border: 1px solid #7a00ff;
+    background: -webkit-linear-gradient(#a900ff, #320167); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a900ff, #320167); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a900ff, #320167); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a900ff, #320167);
+    color: White;
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+}
+
+.ui-widget-content
+{
+    background: rgba(20,20,20,0.8);
+    border: 1px solid #7a00ff;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus
+{
+    border: 1px solid #7a00ff;
+}
+
+
+#Date_Ciudad, #Date_Pais
+{
+    width: 100%;
+    color: #ffffff;
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                               TABS JQUERY                                                                                  */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active
+{
+    border-color: White;
+    color: White;
+    background: -webkit-linear-gradient(#2f0158, #452373); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#2f0158, #452373); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#2f0158, #452373); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#2f0158, #452373); /* Standard syntax (must be last)*/
+}
+
+table.dataTable tr.odd
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #7a00ff;
+    color: #FFFFFF;
+}
+
+table.dataTable tr.even
+{
+    background: rgba(20,20,20,0.2);
+    border: 1px solid #7a00ff;
+    color: #FFFFFF;
+}
+
+table.dataTable tr.odd td.sorting_1
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #7a00ff;
+    color: #FFFFFF;
+}
+table.dataTable tr.odd td.sorting_2
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #7a00ff;
+    color: #FFFFFF;
+}
+table.dataTable tr.odd td.sorting_3
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #7a00ff;
+    color: #FFFFFF;
+}
+table.dataTable tr.even td.sorting_1
+{
+    background: rgba(20,20,20,0.3);
+    border: 1px solid #7a00ff;
+    color: #FFFFFF;
+}
+table.dataTable tr.even td.sorting_2
+{
+    background: rgba(20,20,20,0.3);
+    border: 1px solid #7a00ff;
+    color: #FFFFFF;
+}
+table.dataTable tr.even td.sorting_3
+{
+    background: rgba(20,20,20,0.3);
+    border: 1px solid #7a00ff;
+    color: #FFFFFF;
+}

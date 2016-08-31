@@ -1,0 +1,148 @@
+#Container_title
+{
+    border-color: blue;
+    background: -webkit-linear-gradient(#002e52, #030608); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#002e52, #030608); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#002e52, #030608); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#002e52, #030608); /* Standard syntax (must be last) */
+    border-radius: 7px;
+    padding-left: 20px;
+}
+
+.dimencion
+{
+    margin: 3px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #666;
+    transition: all 1s ease;
+    border-radius: 0px 5px 5px 0px;
+    text-align: center;
+}
+.dimencion:hover
+{
+    width: 180px;
+    transition: all 2s ease;
+}
+
+#container_menu
+{
+    width: 200px;
+    padding: 1em;
+    border: solid #E8E8F7;
+    height: 435px;
+    border-radius: 7px;
+    background: -webkit-linear-gradient(#002e52, #030608); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#002e52, #030608); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#002e52, #030608); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#002e52, #030608); /* Standard syntax (must be last) */
+    position: relative;
+}
+
+#DIV_GruposActividades
+{
+    background: -webkit-linear-gradient(#ffa500, #674301); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffa500, #674301); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffa500, #674301); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffa500, #674301); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+}
+
+#DIV_GruposActividades:hover
+{
+    background: -webkit-linear-gradient(#fbc561, #6f5930); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fbc561, #6f5930); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fbc561, #6f5930); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fbc561, #6f5930); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+}
+
+#DIV_PaisCiudad
+{
+    background: -webkit-linear-gradient(#a900ff, #320167); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a900ff, #320167); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a900ff, #320167); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a900ff, #320167); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+}
+
+#DIV_PaisCiudad:hover
+{
+    background: -webkit-linear-gradient(#c054f7, #61546f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#c054f7, #61546f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#c054f7, #61546f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#c054f7, #61546f); /* Standard syntax (must be last) */
+    color: #000000;
+}
+
+#DIV_Empresa
+{
+    background: -webkit-linear-gradient(#4bff00, #349801); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4bff00, #349801); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4bff00, #349801); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4bff00, #349801); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+}
+
+#DIV_Empresa:hover
+{
+    background: -webkit-linear-gradient(#9ad282, #5c7b4c); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#9ad282, #5c7b4c); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#9ad282, #5c7b4c); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#9ad282, #5c7b4c); /* Standard syntax (must be last) */
+    color: #000000;
+}
+
+#DIV_Rol
+{
+    background: -webkit-linear-gradient(#ff0000, #8a0404); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ff0000, #8a0404); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ff0000, #8a0404); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ff0000, #8a0404); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+}
+
+#DIV_Rol:hover
+{
+    background: -webkit-linear-gradient(#cc6868, #7f4b4b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#cc6868, #7f4b4b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#cc6868, #7f4b4b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#cc6868, #7f4b4b); /* Standard syntax (must be last) */
+    color: #000000;
+}
+
+#DIV_Usuario
+{
+    background: -webkit-linear-gradient(#fbff00, #737503); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fbff00, #737503); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fbff00, #737503); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fbff00, #737503); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+}
+
+#DIV_Usuario:hover
+{
+    background: -webkit-linear-gradient(#ccce55, #6c6d3b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ccce55, #6c6d3b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ccce55, #6c6d3b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ccce55, #6c6d3b); /* Standard syntax (must be last) */
+    color: #000000;
+}
+
+.box_back
+{
+    background: #d5d7d8;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#page_menu
+{
+    position: relative;
+    border: solid #E8E8F7;
+    height: 650px;
+    width: 100%;
+    border-radius: 7px;
+}
+

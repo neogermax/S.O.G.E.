@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="GruposActividadesAjax.aspx.vb" Inherits="MODULO_SEGURIDAD.GruposActividadesAjax" %>

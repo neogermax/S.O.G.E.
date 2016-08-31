@@ -1,0 +1,291 @@
+﻿/*--------------------------------------------------------------------------------------------*/
+/*------------------------------------- ESTILOS PAGINA Grupo_CIUDADES -------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+#Bar_Title_Principal
+{
+    background: -webkit-linear-gradient(#ffa500, #674301); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffa500, #674301); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffa500, #674301); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffa500, #674301); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+    position: relative;
+    bottom: 225px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 830px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#DIV_Consuta_GA, #DIV_Crear_GA, #DIV_Modificar_GA, #DIV_Eliminar_GA
+{
+    background: -webkit-linear-gradient(#ffa500, #674301); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffa500, #674301); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffa500, #674301); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffa500, #674301); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#DIV_Consuta_GA:hover, #DIV_Crear_GA:hover, #DIV_Modificar_GA:hover, #DIV_Eliminar_GA:hover
+{
+    background: -webkit-linear-gradient(#fbc561, #6f5930); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fbc561, #6f5930); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fbc561, #6f5930); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fbc561, #6f5930); /* Standard syntax (must be last) */
+    color: #000000;
+}
+
+.N_search, .N_create, .N_update, .N_delete
+{
+    display: none;
+}
+
+.I_search, .I_create, .I_update, .I_delete
+{
+    display: block;
+}
+
+#DIV_Consuta_GA:hover .N_search
+{
+    display: block;
+}
+
+#DIV_Consuta_GA:hover .I_search
+{
+    display: none;
+}
+
+#DIV_Crear_GA:hover .N_create
+{
+    display: block;
+}
+
+#DIV_Crear_GA:hover .I_create
+{
+    display: none;
+}
+
+#DIV_Modificar_GA:hover .N_update
+{
+    display: block;
+}
+
+#DIV_Modificar_GA:hover .I_update
+{
+    display: none;
+}
+
+#DIV_Eliminar_GA:hover .N_delete
+{
+    display: block;
+}
+
+#DIV_Eliminar_GA:hover .I_delete
+{
+    display: none;
+}
+
+#Bar_Title_GA
+{
+    background: -webkit-linear-gradient(#ffa500, #674301); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffa500, #674301); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffa500, #674301); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffa500, #674301); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+    position: relative;
+    bottom: 225px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 830px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#block_search_GA
+{
+    border: solid #E8E8F7;
+    padding-left: 100px;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    background: -webkit-linear-gradient(#ffa500, #674301); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffa500, #674301); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffa500, #674301); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffa500, #674301);
+}
+
+#Block_Insert_GA
+{
+    border: solid #E8E8F7;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    background: -webkit-linear-gradient(#ffa500, #674301); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffa500, #674301); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffa500, #674301); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffa500, #674301);
+}
+
+.BtnGrupo
+{
+    padding: 5px 2px 5px 2px;
+    border-radius: 7px;
+    border-color: White;
+    background: -webkit-linear-gradient(#583101, #735323); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#583101, #735323); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#583101, #735323); /* For Firefox 3.6 to 15 */
+    background: inear-gradient(#583101, #735323); /* Standard syntax (must be last) */
+    color: White;
+    width: 110px;
+}
+
+.BtnGrupo:hover
+{
+    padding: 5px 2px 5px 2px;
+    border-radius: 7px;
+    border-color: White;
+    background: -webkit-linear-gradient(#402203, #130900); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#402203, #130900); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#402203, #130900); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#402203, #130900); /* Standard syntax (must be last) */
+    color: White;
+    width: 110px;
+}
+
+.SelectGrupo
+{
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+    font-size: 14px;
+    padding: 5px 2px 5px 2px;
+    border-radius: 7px;
+    border-color: White;
+    background: -webkit-linear-gradient(#583101, #735323); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#583101, #735323); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#583101, #735323); /* For Firefox 3.6 to 15 */
+    background: inear-gradient(#583101, #735323); /* Standard syntax (must be last) */
+    color: White;
+    width: 200px;
+}
+
+.SelectGrupo option
+{
+    background: #ffa500;
+    color: White;
+    border-radius: 7px;
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+    font-size: 14px;
+}
+
+.ui-widget-header
+{
+    border: 1px solid #ffa500;
+    background: -webkit-linear-gradient(#ffa500, #674301); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffa500, #674301); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffa500, #674301); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffa500, #674301);
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+{
+    border: 1px solid #ffa500;
+    background: -webkit-linear-gradient(#ffa500, #674301); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffa500, #674301); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffa500, #674301); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffa500, #674301);
+    color: White;
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+}
+
+.ui-widget-content
+{
+    background: rgba(20,20,20,0.8);
+    border: 1px solid #ffa500;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus
+{
+    border: 1px solid #ffa500;
+}
+
+
+#Date_Grupo, #Date_Actividad
+{
+    width: 100%;
+    color: #ffffff;
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                               TABS JQUERY                                                                                  */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active
+{
+    border-color: White;
+    color: White;
+    background: -webkit-linear-gradient(#583101, #735323); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#583101, #735323); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#583101, #735323); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#583101, #735323); /* Standard syntax (must be last)*/
+}
+
+table.dataTable tr.odd
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #ffa500;
+    color: #FFFFFF;
+}
+
+table.dataTable tr.even
+{
+    background: rgba(20,20,20,0.2);
+    border: 1px solid #ffa500;
+    color: #FFFFFF;
+}
+
+table.dataTable tr.odd td.sorting_1
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #ffa500;
+    color: #FFFFFF;
+}
+table.dataTable tr.odd td.sorting_2
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #ffa500;
+    color: #FFFFFF;
+}
+table.dataTable tr.odd td.sorting_3
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #ffa500;
+    color: #FFFFFF;
+}
+table.dataTable tr.even td.sorting_1
+{
+    background: rgba(20,20,20,0.3);
+    border: 1px solid #ffa500;
+    color: #FFFFFF;
+}
+table.dataTable tr.even td.sorting_2
+{
+    background: rgba(20,20,20,0.3);
+    border: 1px solid #ffa500;
+    color: #FFFFFF;
+}
+table.dataTable tr.even td.sorting_3
+{
+    background: rgba(20,20,20,0.3);
+    border: 1px solid #ffa500;
+    color: #FFFFFF;
+}

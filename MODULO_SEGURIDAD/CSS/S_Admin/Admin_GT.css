@@ -1,0 +1,71 @@
+﻿/*--------------------------------------------------------------------------------------------*/
+/*------------------- CONTENEDORES GENERALES PARA SUPER ADMINISTRACION  ----------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+#container_menu
+{
+    bottom: 95px;
+}
+
+#container_Work
+{
+    width: 965px;
+    padding: 1em;
+    border: solid #E8E8F7;
+    height: 430px;
+    border-radius: 7px;
+}
+
+#container_Control
+{
+    position: relative;
+    bottom: 5px;
+    border: solid #E8E8F7;
+    border-radius: 7px;
+    width: 120px;
+    background: -webkit-linear-gradient(#002e52, #030608); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#002e52, #030608); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#002e52, #030608); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#002e52, #030608); /* Standard syntax (must be last) */
+}
+
+#container_state
+{
+    width: 825px;
+    border: solid #E8E8F7;
+    height: 370px;
+    border-radius: 7px;
+    position: relative;
+    float: right;
+    bottom: 210px;
+}
+
+/*--------------- CLASE GENERAL PARA LOS LABEL DE ADMINISTRACION -----------------------------*/
+.lblCreate
+{
+    font-weight: bold;
+    color: White;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/*------------------------------ MANEJO DE BARRA DE CONTROL CRUD -----------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+.Dimencion_Control
+{
+    margin: 3px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #666;
+    transition: all 1s ease;
+    border-radius: 0px 5px 5px 0px;
+    text-align: center;
+    font-size: 1px;
+}
+.Dimencion_Control:hover
+{
+    width: 100px;
+    transition: all 2s ease;
+    font-size: 17px;
+}
+
