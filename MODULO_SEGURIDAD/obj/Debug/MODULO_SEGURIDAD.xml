@@ -6,62 +6,120 @@ MODULO_SEGURIDAD
 </name>
 </assembly>
 <members>
-<member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.Read_All(System.String,System.String)">
+<member name="P:MODULO_SEGURIDAD.My.Resources.Resources.ResourceManager">
 	<summary>
- creala consulta para la tabla GruposActividades parametrizada (READ)
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:MODULO_SEGURIDAD.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="T:MODULO_SEGURIDAD.My.Resources.Resources">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.Read_All(System.String,System.String)">
+	<summary>
+ creala consulta para la tabla PaisesCiudades parametrizada (READ)
  </summary>
-	<param name="vGA_S_Filtro"></param>
-	<param name="vGA_S_Contenido"></param>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Contenido"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.Insert(MODULO_SEGURIDAD.GruposActividadesClass)">
+</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.Insert(MODULO_SEGURIDAD.PaisesCiudadesClass)">
 	<summary>
- funcion que crea el query para la insercion del nuevo Grupo (INSERT)
+ funcion que crea el query para la insercion del nuevo Pais (INSERT)
  </summary>
-	<param name="vGA_Obj"></param>
+	<param name="vp_Obj"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.Update(MODULO_SEGURIDAD.GruposActividadesClass)">
+</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.Update(MODULO_SEGURIDAD.PaisesCiudadesClass)">
 	<summary>
- funcion que crea el query para la modificacion de al GruposActividades (UPDATE)
+ funcion que crea el query para la modificacion de al PaisesCiudades (UPDATE)
  </summary>
-	<param name="vGA_Obj"></param>
+	<param name="vp_Obj"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.Delete(MODULO_SEGURIDAD.GruposActividadesClass)">
+</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.Delete(MODULO_SEGURIDAD.PaisesCiudadesClass)">
 	<summary>
- funcion que crea el query para la eliminacion de la GruposActividades (DELETE)
+ funcion que crea el query para la eliminacion de la paisesciudades (DELETE)
  </summary>
-	<param name="vGA_Obj"></param>
+	<param name="vp_Obj"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.Read_AllCountry(System.String)">
+</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.Read_AllCountry(System.String)">
 	<summary>
- creala consulta para la tabla Actividades dependiendo del Grupo seleccionado (READ)
+ creala consulta para la tabla Ciudades dependiendo del pais seleccionado (READ)
  </summary>
-	<param name="vGA_S_ID"></param>
+	<param name="vp_S_ID"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.ReadCharge_DropListGrupo(System.String)">
+</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.ReadCharge_DropListPaises(System.String)">
 	<summary>
  crea la consulta para cargar el combo
  </summary>
-	<param name="vGA_S_Table"></param>
+	<param name="vp_S_Table"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.list(System.String,System.String,System.String)">
+</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.list(System.String,System.String,System.String)">
 	<summary>
- funcion que trae el listado de GruposActividades para armar la tabla
+ funcion que trae el listado de PaisesCiudades para armar la tabla
  </summary>
-	<param name="vGA_S_StrQuery"></param>
+	<param name="vp_S_StrQuery"></param>
 	<param name="vg_S_StrConexion"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.listCountry(System.String,System.String)">
+</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.listCountry(System.String,System.String)">
 	<summary>
- funcion que trae el listado de Actividades para armar la tabla
+ funcion que trae el listado de Ciudades para armar la tabla
  </summary>
-	<param name="vGA_S_StrQuery"></param>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.RolSQLClass.Read_All(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla Rol parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.RolSQLClass.Insert(MODULO_SEGURIDAD.RolClass)">
+	<summary>
+ funcion que crea el query para la insercion de la nueva Rol (INSERT)
+ </summary>
+	<param name="vp_Obj"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.RolSQLClass.Update(MODULO_SEGURIDAD.RolClass)">
+	<summary>
+ funcion que crea el query para la modificacion de al Rol (UPDATE)
+ </summary>
+	<param name="vp_Obj"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.RolSQLClass.Inactive(MODULO_SEGURIDAD.RolClass)">
+	<summary>
+ funcion que crea el query para la inactivacion de la Rol (DELETE)
+ </summary>
+	<param name="vp_Obj"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.RolSQLClass.ReadCharge_DropListState(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.RolSQLClass.list(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de Area para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
 	<param name="vg_S_StrConexion"></param>
 	<returns></returns>
 	<remarks></remarks>
@@ -133,6 +191,168 @@ MODULO_SEGURIDAD
 	<param name="vg_S_StrConexion"></param>
 	<returns></returns>
 	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL busqueda
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.CargarDroplistState">
+	<summary>
+ funcion que carga el objeto DDL estado
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.CargarDroplistPais">
+	<summary>
+ funcion que carga el objeto DDL estado
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.CargarDroplistCiudades">
+	<summary>
+ funcion que carga el objeto DDL estado
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.CargarDroplistGrupo">
+	<summary>
+ funcion que carga el objeto DDL estado
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.CargarDroplistActividad">
+	<summary>
+ funcion que carga el objeto DDL estado
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.C_reate">
+	<summary>
+ funcion que inserta en la tabla empresa (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.R_ead">
+	<summary>
+ traemos todos los datos para tabla empresa (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.U_pdate">
+	<summary>
+ funcion que actualiza en la tabla empresa (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.D_elete">
+	<summary>
+ funcion que elimina en la tabla empresa (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.Read_All(System.String,System.String)">
+	<summary>
+ creala consulta para la tabla GruposActividades parametrizada (READ)
+ </summary>
+	<param name="vGA_S_Filtro"></param>
+	<param name="vGA_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.Insert(MODULO_SEGURIDAD.GruposActividadesClass)">
+	<summary>
+ funcion que crea el query para la insercion del nuevo Grupo (INSERT)
+ </summary>
+	<param name="vGA_Obj"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.Update(MODULO_SEGURIDAD.GruposActividadesClass)">
+	<summary>
+ funcion que crea el query para la modificacion de al GruposActividades (UPDATE)
+ </summary>
+	<param name="vGA_Obj"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.Delete(MODULO_SEGURIDAD.GruposActividadesClass)">
+	<summary>
+ funcion que crea el query para la eliminacion de la GruposActividades (DELETE)
+ </summary>
+	<param name="vGA_Obj"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.Read_AllCountry(System.String)">
+	<summary>
+ creala consulta para la tabla Actividades dependiendo del Grupo seleccionado (READ)
+ </summary>
+	<param name="vGA_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.ReadCharge_DropListGrupo(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vGA_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.list(System.String,System.String,System.String)">
+	<summary>
+ funcion que trae el listado de GruposActividades para armar la tabla
+ </summary>
+	<param name="vGA_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.GruposActividadesSQLClass.listCountry(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de Actividades para armar la tabla
+ </summary>
+	<param name="vGA_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.EncriptarClass.Encriptacion(System.String)">
+	<summary>
+ funcion para encriptacion del password diseñada por
+ German Alejandro Rodriguez
+ </summary>
+	<param name="pl_S_password"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.EncriptarClass.Des_Encriptar(System.String)">
+	<summary>
+ funcion para encriptacion del password diseñada por
+ German Alejandro Rodriguez
+ </summary>
+	<param name="pl_S_password"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.EncriptarClass.Encriptacion_MD5(System.String)">
+	<summary>
+ funcion para encriptacion del password MD5
+ </summary>
+	<param name="SourceText"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.GruposActividadesAjax.CargarDroplistGrupo">
+	<summary>
+ funcion que carga el objeto DDL estado
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.GruposActividadesAjax.C_reate">
+	<summary>
+ funcion que inserta en la tabla GruposActividades (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.GruposActividadesAjax.R_ead">
+	<summary>
+ traemos todos los datos para tabla GruposActividades (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.GruposActividadesAjax.U_pdate">
+	<summary>
+ funcion que actualiza en la tabla GruposActividades (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.GruposActividadesAjax.D_elete">
+	<summary>
+ funcion que elimina en la tabla GruposActividades (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.GruposActividadesAjax.R_ead_Country">
+	<summary>
+ traemos todos los datos para tabla GruposActividades (READ)
+ </summary>
+	<remarks></remarks>
 </member><member name="M:MODULO_SEGURIDAD.UsuarioSQLClass.Read_All(System.String,System.String,System.String)">
 	<summary>
  creala consulta para la tabla Usuario parametrizada (READ)
@@ -192,205 +412,14 @@ MODULO_SEGURIDAD
 	<param name="vg_S_StrConexion"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.RolAjax.CargarDroplist">
+</member><member name="F:MODULO_SEGURIDAD.Login1.form1">
 	<summary>
- funcion que carga el objeto DDL busqueda
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.RolAjax.CargarDroplistState">
-	<summary>
- funcion que carga el objeto DDL estado
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.RolAjax.C_reate">
-	<summary>
- funcion que inserta en la tabla Rol (INSERT)
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.RolAjax.R_ead">
-	<summary>
- traemos todos los datos para tabla Area (READ)
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.RolAjax.U_pdate">
-	<summary>
- funcion que actualiza en la tabla Rol (UPDATE)
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.RolAjax.D_elete">
-	<summary>
- funcion que elimina en la tabla Rol (DELETE)
- </summary>
-	<remarks></remarks>
-</member><member name="P:MODULO_SEGURIDAD.My.MyWebExtension.Application">
-	<summary>
- Devuelve información sobre la aplicación actual.
- </summary>
-</member><member name="P:MODULO_SEGURIDAD.My.MyWebExtension.Computer">
-	<summary>
- Devuelve información sobre el equipo host.
- </summary>
-</member><member name="P:MODULO_SEGURIDAD.My.MyWebExtension.User">
-	<summary>
- Devuelve información del usuario web actual.
- </summary>
-</member><member name="P:MODULO_SEGURIDAD.My.MyWebExtension.Request">
-	<summary>
- Devuelve un objeto Request.
- </summary>
-</member><member name="P:MODULO_SEGURIDAD.My.MyWebExtension.Response">
-	<summary>
- Devuelve un objeto Response.
- </summary>
-</member><member name="P:MODULO_SEGURIDAD.My.MyWebExtension.Log">
-	<summary>
- Devuelve el objeto de registro Asp.
- </summary>
-</member><member name="P:MODULO_SEGURIDAD.My.MyWebExtension.WebServices">
-	<summary>
- Proporciona acceso a los servicios Web agregados a este proyecto.
- </summary>
-</member><member name="T:MODULO_SEGURIDAD.My.MyWebExtension">
-	<summary>
- Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.Read_All(System.String,System.String)">
-	<summary>
- creala consulta para la tabla PaisesCiudades parametrizada (READ)
- </summary>
-	<param name="vp_S_Filtro"></param>
-	<param name="vp_S_Contenido"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.Insert(MODULO_SEGURIDAD.PaisesCiudadesClass)">
-	<summary>
- funcion que crea el query para la insercion del nuevo Pais (INSERT)
- </summary>
-	<param name="vp_Obj"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.Update(MODULO_SEGURIDAD.PaisesCiudadesClass)">
-	<summary>
- funcion que crea el query para la modificacion de al PaisesCiudades (UPDATE)
- </summary>
-	<param name="vp_Obj"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.Delete(MODULO_SEGURIDAD.PaisesCiudadesClass)">
-	<summary>
- funcion que crea el query para la eliminacion de la paisesciudades (DELETE)
- </summary>
-	<param name="vp_Obj"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.Read_AllCountry(System.String)">
-	<summary>
- creala consulta para la tabla Ciudades dependiendo del pais seleccionado (READ)
- </summary>
-	<param name="vp_S_ID"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.ReadCharge_DropListPaises(System.String)">
-	<summary>
- crea la consulta para cargar el combo
- </summary>
-	<param name="vp_S_Table"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.list(System.String,System.String,System.String)">
-	<summary>
- funcion que trae el listado de PaisesCiudades para armar la tabla
- </summary>
-	<param name="vp_S_StrQuery"></param>
-	<param name="vg_S_StrConexion"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.PaisesCiudadesSQLClass.listCountry(System.String,System.String)">
-	<summary>
- funcion que trae el listado de Ciudades para armar la tabla
- </summary>
-	<param name="vp_S_StrQuery"></param>
-	<param name="vg_S_StrConexion"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.CargarDroplist">
-	<summary>
- funcion que carga el objeto DDL busqueda
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.CargarDroplistState">
-	<summary>
- funcion que carga el objeto DDL estado
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.CargarDroplistempresa">
-	<summary>
- funcion que carga el objeto DDL empresa
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.CargarDroplistRol">
-	<summary>
- funcion que carga el objeto DDL Rol
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.C_reate">
-	<summary>
- funcion que inserta en la tabla Usuario (INSERT)
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.R_ead">
-	<summary>
- traemos todos los datos para tabla Area (READ)
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.U_pdate">
-	<summary>
- funcion que actualiza en la tabla Usuario (UPDATE)
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.D_elete">
-	<summary>
- funcion que elimina en la tabla Usuario (DELETE)
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.validateC_reate">
-	<summary>
- funcion que valida si esta autorizado para crear el super usuario
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.ResetUser">
-	<summary>
- funcion que resetea la contraseña deñ usuario
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.Consulta_Existe(System.String)">
-	<summary>
- funcion que valida si el id esta en la BD
- </summary>
-	<param name="vp_S_exist"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.Conector.StrInsert_and_Update_All(System.String)">
-	<summary>
- funcion generica para la insercion, actualizacion o eliminar de datos en la BD
- </summary>
-	<param name="vp_S_StrQuery"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.Conector.IDis(System.String)">
-	<summary>
- funcion generica para consultas de un solo resultado tipo integer
- </summary>
-	<param name="vp_S_StrQuery"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.Conector.typeConexion(System.String)">
-	<summary>
- funcion de swicheo de conexion a BD por medio de vlores del web config
- </summary>
-	<returns></returns>
-	<remarks></remarks>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
 </member><member name="M:MODULO_SEGURIDAD.EmpresaSQLClass.Read_All(System.String,System.String,System.String)">
 	<summary>
  creala consulta para la tabla empresa parametrizada (READ)
@@ -464,35 +493,25 @@ MODULO_SEGURIDAD
 	<param name="vg_S_StrConexion"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.GruposActividadesAjax.CargarDroplistGrupo">
+</member><member name="M:MODULO_SEGURIDAD.Conector.StrInsert_and_Update_All(System.String)">
 	<summary>
- funcion que carga el objeto DDL estado
+ funcion generica para la insercion, actualizacion o eliminar de datos en la BD
  </summary>
+	<param name="vp_S_StrQuery"></param>
+	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.GruposActividadesAjax.C_reate">
+</member><member name="M:MODULO_SEGURIDAD.Conector.IDis(System.String)">
 	<summary>
- funcion que inserta en la tabla GruposActividades (INSERT)
+ funcion generica para consultas de un solo resultado tipo integer
  </summary>
+	<param name="vp_S_StrQuery"></param>
+	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.GruposActividadesAjax.R_ead">
+</member><member name="M:MODULO_SEGURIDAD.Conector.typeConexion(System.String)">
 	<summary>
- traemos todos los datos para tabla GruposActividades (READ)
+ funcion de swicheo de conexion a BD por medio de vlores del web config
  </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.GruposActividadesAjax.U_pdate">
-	<summary>
- funcion que actualiza en la tabla GruposActividades (UPDATE)
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.GruposActividadesAjax.D_elete">
-	<summary>
- funcion que elimina en la tabla GruposActividades (DELETE)
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.GruposActividadesAjax.R_ead_Country">
-	<summary>
- traemos todos los datos para tabla GruposActividades (READ)
- </summary>
+	<returns></returns>
 	<remarks></remarks>
 </member><member name="M:MODULO_SEGURIDAD.LoginSQLClass.InsertSession(MODULO_SEGURIDAD.LoginClass)">
 	<summary>
@@ -530,10 +549,11 @@ MODULO_SEGURIDAD
 	<param name="pl_obj_User"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.LoginSQLClass.Read_AllUserLogin">
+</member><member name="M:MODULO_SEGURIDAD.LoginSQLClass.Read_AllUserLogin(System.String)">
 	<summary>
  funcion query para la consulta tabla Usuarios para ingreso a la aplicacion
  </summary>
+	<param name="vp_S_User"></param>
 	<returns></returns>
 	<remarks></remarks>
 </member><member name="M:MODULO_SEGURIDAD.LoginSQLClass.ListLogin(System.String,System.String,System.String)">
@@ -541,59 +561,43 @@ MODULO_SEGURIDAD
  trae el listado solicitado por login
  </summary>
 	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<param name="vp_S_TypeTrans"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.Menu_SA_Ajax.Consulta_menu">
+</member><member name="P:MODULO_SEGURIDAD.My.MyWebExtension.Application">
 	<summary>
- traemos todos los datos para construir el menu
+ Devuelve información sobre la aplicación actual.
+ </summary>
+</member><member name="P:MODULO_SEGURIDAD.My.MyWebExtension.Computer">
+	<summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member><member name="P:MODULO_SEGURIDAD.My.MyWebExtension.User">
+	<summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member><member name="P:MODULO_SEGURIDAD.My.MyWebExtension.Request">
+	<summary>
+ Devuelve un objeto Request.
+ </summary>
+</member><member name="P:MODULO_SEGURIDAD.My.MyWebExtension.Response">
+	<summary>
+ Devuelve un objeto Response.
+ </summary>
+</member><member name="P:MODULO_SEGURIDAD.My.MyWebExtension.Log">
+	<summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member><member name="P:MODULO_SEGURIDAD.My.MyWebExtension.WebServices">
+	<summary>
+ Proporciona acceso a los servicios Web agregados a este proyecto.
+ </summary>
+</member><member name="T:MODULO_SEGURIDAD.My.MyWebExtension">
+	<summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
  </summary>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.LoginAjax.ingresar">
-	<summary>
- 'funcion que valida contra la BD si el usuario y contraseña son correctos
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.LoginAjax.CambioContraseña">
-	<summary>
- funcion que ejecuta el proceso de cambio de clave
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.LoginAjax.Genera">
-	<summary>
- funcion de manejode session del usuario
- </summary>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.EncriptarClass.Encriptacion(System.String)">
-	<summary>
- funcion para encriptacion del password diseñada por
- German Alejandro Rodriguez
- </summary>
-	<param name="pl_S_password"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.EncriptarClass.Des_Encriptar(System.String)">
-	<summary>
- funcion para encriptacion del password diseñada por
- German Alejandro Rodriguez
- </summary>
-	<param name="pl_S_password"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.EncriptarClass.Encriptacion_MD5(System.String)">
-	<summary>
- funcion para encriptacion del password MD5
- </summary>
-	<param name="SourceText"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="F:MODULO_SEGURIDAD.Login1.form1">
-	<summary>
-Control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
 </member><member name="F:MODULO_SEGURIDAD.SOGE.head">
 	<summary>
 Control head.
@@ -618,100 +622,112 @@ Control Main.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.CargarDroplist">
+</member><member name="M:MODULO_SEGURIDAD.RolAjax.CargarDroplist">
 	<summary>
  funcion que carga el objeto DDL busqueda
  </summary>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.CargarDroplistState">
+</member><member name="M:MODULO_SEGURIDAD.RolAjax.CargarDroplistState">
 	<summary>
  funcion que carga el objeto DDL estado
  </summary>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.CargarDroplistPais">
+</member><member name="M:MODULO_SEGURIDAD.RolAjax.C_reate">
+	<summary>
+ funcion que inserta en la tabla Rol (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.RolAjax.R_ead">
+	<summary>
+ traemos todos los datos para tabla Area (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.RolAjax.U_pdate">
+	<summary>
+ funcion que actualiza en la tabla Rol (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.RolAjax.D_elete">
+	<summary>
+ funcion que elimina en la tabla Rol (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.LoginAjax.ingresar">
+	<summary>
+ 'funcion que valida contra la BD si el usuario y contraseña son correctos
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.LoginAjax.CambioContraseña">
+	<summary>
+ funcion que ejecuta el proceso de cambio de clave
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.LoginAjax.Genera">
+	<summary>
+ funcion de manejode session del usuario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL busqueda
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.CargarDroplistState">
 	<summary>
  funcion que carga el objeto DDL estado
  </summary>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.CargarDroplistCiudades">
+</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.CargarDroplistempresa">
 	<summary>
- funcion que carga el objeto DDL estado
+ funcion que carga el objeto DDL empresa
  </summary>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.CargarDroplistGrupo">
+</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.CargarDroplistRol">
 	<summary>
- funcion que carga el objeto DDL estado
+ funcion que carga el objeto DDL Rol
  </summary>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.CargarDroplistActividad">
+</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.C_reate">
 	<summary>
- funcion que carga el objeto DDL estado
+ funcion que inserta en la tabla Usuario (INSERT)
  </summary>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.C_reate">
+</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.R_ead">
 	<summary>
- funcion que inserta en la tabla empresa (INSERT)
+ traemos todos los datos para tabla Area (READ)
  </summary>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.R_ead">
+</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.U_pdate">
 	<summary>
- traemos todos los datos para tabla empresa (READ)
+ funcion que actualiza en la tabla Usuario (UPDATE)
  </summary>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.U_pdate">
+</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.D_elete">
 	<summary>
- funcion que actualiza en la tabla empresa (UPDATE)
+ funcion que elimina en la tabla Usuario (DELETE)
  </summary>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.EmpresaAjax.D_elete">
+</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.validateC_reate">
 	<summary>
- funcion que elimina en la tabla empresa (DELETE)
+ funcion que valida si esta autorizado para crear el super usuario
  </summary>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.RolSQLClass.Read_All(System.String,System.String,System.String)">
+</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.ResetUser">
 	<summary>
- creala consulta para la tabla Rol parametrizada (READ)
+ funcion que resetea la contraseña deñ usuario
  </summary>
-	<param name="vp_S_Filtro"></param>
-	<param name="vp_S_Opcion"></param>
-	<param name="vp_S_Contenido"></param>
+	<remarks></remarks>
+</member><member name="M:MODULO_SEGURIDAD.UsuarioAjax.Consulta_Existe(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_exist"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.RolSQLClass.Insert(MODULO_SEGURIDAD.RolClass)">
+</member><member name="M:MODULO_SEGURIDAD.Menu_SA_Ajax.Consulta_menu">
 	<summary>
- funcion que crea el query para la insercion de la nueva Rol (INSERT)
+ traemos todos los datos para construir el menu
  </summary>
-	<param name="vp_Obj"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.RolSQLClass.Update(MODULO_SEGURIDAD.RolClass)">
-	<summary>
- funcion que crea el query para la modificacion de al Rol (UPDATE)
- </summary>
-	<param name="vp_Obj"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.RolSQLClass.Inactive(MODULO_SEGURIDAD.RolClass)">
-	<summary>
- funcion que crea el query para la inactivacion de la Rol (DELETE)
- </summary>
-	<param name="vp_Obj"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.RolSQLClass.ReadCharge_DropListState(System.String)">
-	<summary>
- crea la consulta para cargar el combo
- </summary>
-	<param name="vp_S_Table"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MODULO_SEGURIDAD.RolSQLClass.list(System.String,System.String)">
-	<summary>
- funcion que trae el listado de Area para armar la tabla
- </summary>
-	<param name="vp_S_StrQuery"></param>
-	<param name="vg_S_StrConexion"></param>
-	<returns></returns>
 	<remarks></remarks>
 </member>
 </members>

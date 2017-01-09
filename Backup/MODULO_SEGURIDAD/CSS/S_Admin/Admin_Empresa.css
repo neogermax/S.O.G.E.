@@ -1,0 +1,315 @@
+﻿/*--------------------------------------------------------------------------------------------*/
+/*------------------------------------- ESTILOS PAGINA EMPRESA -------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+#Bar_Title_Principal
+{
+    background: -webkit-linear-gradient(#4bff00, #349801); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4bff00, #349801); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4bff00, #349801); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4bff00, #349801); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+    position: relative;
+    bottom: 225px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 830px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#DIV_Consuta_Em, #DIV_Crear_Em, #DIV_Modificar_Em, #DIV_Eliminar_Em
+{
+    background: -webkit-linear-gradient(#4bff00, #349801); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4bff00, #349801); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4bff00, #349801); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4bff00, #349801); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#DIV_Consuta_Em:hover, #DIV_Crear_Em:hover, #DIV_Modificar_Em:hover, #DIV_Eliminar_Em:hover
+{
+    background: -webkit-linear-gradient(#9ad282, #5c7b4c); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#9ad282, #5c7b4c); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#9ad282, #5c7b4c); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#9ad282, #5c7b4c); /* Standard syntax (must be last) */
+    color: #000000;
+}
+
+.N_search, .N_create, .N_update, .N_delete
+{
+    display: none;
+}
+
+.I_search, .I_create, .I_update, .I_delete
+{
+    display: block;
+}
+
+#DIV_Consuta_Em:hover .N_search
+{
+    display: block;
+}
+
+#DIV_Consuta_Em:hover .I_search
+{
+    display: none;
+}
+
+#DIV_Crear_Em:hover .N_create
+{
+    display: block;
+}
+
+#DIV_Crear_Em:hover .I_create
+{
+    display: none;
+}
+
+#DIV_Modificar_Em:hover .N_update
+{
+    display: block;
+}
+
+#DIV_Modificar_Em:hover .I_update
+{
+    display: none;
+}
+
+#DIV_Eliminar_Em:hover .N_delete
+{
+    display: block;
+}
+
+#DIV_Eliminar_Em:hover .I_delete
+{
+    display: none;
+}
+
+#Bar_Title_Emp
+{
+    background: -webkit-linear-gradient(#4bff00, #349801); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4bff00, #349801); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4bff00, #349801); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4bff00, #349801); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+    position: relative;
+    bottom: 225px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 830px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#block_search_Emp
+{
+    border: solid #E8E8F7;
+    padding-left: 100px;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    background: -webkit-linear-gradient(#4bff00, #349801); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4bff00, #349801); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4bff00, #349801); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4bff00, #349801);
+}
+
+#Block_Insert_Emp
+{
+    border: solid #E8E8F7;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    background: -webkit-linear-gradient(#4bff00, #349801); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4bff00, #349801); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4bff00, #349801); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4bff00, #349801);
+    height: 350px;
+    overflow: auto;
+}
+
+.BtnEmpresa
+{
+    padding: 5px 2px 5px 2px;
+    border-radius: 7px;
+    border-color: White;
+    background: -webkit-linear-gradient(#015804, #3e7323); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#015804, #3e7323); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#015804, #3e7323); /* For Firefox 3.6 to 15 */
+    background: inear-gradient(#015804, #3e7323); /* Standard syntax (must be last) */
+    color: White;
+    width: 110px;
+}
+
+.BtnEmpresa:hover
+{
+    padding: 5px 2px 5px 2px;
+    border-radius: 7px;
+    border-color: White;
+    background: -webkit-linear-gradient(#184003, #061300); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#184003, #061300); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#184003, #061300); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#184003, #061300); /* Standard syntax (must be last) */
+    color: White;
+    width: 110px;
+}
+
+.SelectEmpresa
+{
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+    padding: 5px 2px 5px 2px;
+    border-radius: 7px;
+    border-color: White;
+    background: -webkit-linear-gradient(#015804, #3e7323); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#015804, #3e7323); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#015804, #3e7323); /* For Firefox 3.6 to 15 */
+    background: inear-gradient(#015804, #3e7323); /* Standard syntax (must be last) */
+    color: White;
+    width: 200px;
+}
+
+.SelectEmpresa option
+{
+    background: #184003;
+    color: White;
+    border-radius: 7px;
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+}
+
+.SelectEmpresa[disabled=disabled], .SelectEmpresa:disabled
+{
+    padding: 5px 2px 5px 2px;
+    border-radius: 7px;
+    border-color: #999;
+    background: -webkit-linear-gradient(#657d58, #454844); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#657d58, #454844); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#657d58, #454844); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#657d58, #454844); /* Standard syntax (must be last) */
+    color: #999;
+}
+
+.ui-widget-header
+{
+    border: 1px solid #056b04;
+    background: -webkit-linear-gradient(#4bff00, #349801); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4bff00, #349801); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4bff00, #349801); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4bff00, #349801);
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+{
+    border: 1px solid #056b04;
+    background: -webkit-linear-gradient(#4bff00, #349801); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4bff00, #349801); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4bff00, #349801); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4bff00, #349801);
+    color: White;
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+}
+
+.ui-widget-content
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #4bff00;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus
+{
+    border: 1px solid #4bff00;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                               TABS JQUERY                                                                                  */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active
+{
+    border-color: White;
+    color: White;
+    background: -webkit-linear-gradient(#015804, #3e7323); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#015804, #3e7323); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#015804, #3e7323); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#015804, #3e7323); /* Standard syntax (must be last)*/
+}
+
+ .ui-state-active a:link{
+    color: #03fff5;
+}
+
+table.dataTable tr.odd
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #4bff00;
+    color: #FFFFFF;
+}
+
+table.dataTable tr.even
+{
+    background: rgba(20,20,20,0.2);
+    border: 1px solid #4bff00;
+    color: #FFFFFF;
+}
+
+table.dataTable tr.odd td.sorting_1
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #4bff00;
+    color: #FFFFFF;
+}
+table.dataTable tr.odd td.sorting_2
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #4bff00;
+    color: #FFFFFF;
+}
+table.dataTable tr.odd td.sorting_3
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #4bff00;
+    color: #FFFFFF;
+}
+table.dataTable tr.even td.sorting_1
+{
+    background: rgba(20,20,20,0.3);
+    border: 1px solid #4bff00;
+    color: #FFFFFF;
+}
+table.dataTable tr.even td.sorting_2
+{
+    background: rgba(20,20,20,0.3);
+    border: 1px solid #4bff00;
+    color: #FFFFFF;
+}
+table.dataTable tr.even td.sorting_3
+{
+    background: rgba(20,20,20,0.3);
+    border: 1px solid #4bff00;
+    color: #FFFFFF;
+}
+
+.Style_Label
+{
+    background: #333;
+    border-radius: 5px;
+    color: #4bff00;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    width: 250px;
+    text-align: center;
+    border: solid 1px;
+    font-size:13px;
+}

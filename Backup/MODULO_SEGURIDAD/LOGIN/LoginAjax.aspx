@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="LoginAjax.aspx.vb" Inherits="MODULO_SEGURIDAD.LoginAjax" %>

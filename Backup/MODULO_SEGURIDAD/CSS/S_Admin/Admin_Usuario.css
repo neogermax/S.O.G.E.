@@ -1,0 +1,285 @@
+﻿/*--------------------------------------------------------------------------------------------*/
+/*------------------------------------- ESTILOS PAGINA Usuario -------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+#Bar_Title_Principal
+{
+    background: -webkit-linear-gradient(#fbff00, #737503); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fbff00, #737503); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fbff00, #737503); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fbff00, #737503); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+    position: relative;
+    bottom: 225px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 830px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#DIV_Consuta_Usu, #DIV_Crear_Usu, #DIV_Modificar_Usu, #DIV_Eliminar_Usu
+{
+    background: -webkit-linear-gradient(#fbff00, #737503); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fbff00, #737503); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fbff00, #737503); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fbff00, #737503); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#DIV_Consuta_Usu:hover, #DIV_Crear_Usu:hover, #DIV_Modificar_Usu:hover, #DIV_Eliminar_Usu:hover
+{
+    background: -webkit-linear-gradient(#ccce55, #6c6d3b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ccce55, #6c6d3b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ccce55, #6c6d3b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ccce55, #6c6d3b); /* Standard syntax (must be last) */
+    color: #000000;
+}
+
+.N_search, .N_create, .N_update, .N_delete
+{
+    display: none;
+}
+
+.I_search, .I_create, .I_update, .I_delete
+{
+    display: block;
+}
+
+#DIV_Consuta_Usu:hover .N_search
+{
+    display: block;
+}
+
+#DIV_Consuta_Usu:hover .I_search
+{
+    display: none;
+}
+
+#DIV_Crear_Usu:hover .N_create
+{
+    display: block;
+}
+
+#DIV_Crear_Usu:hover .I_create
+{
+    display: none;
+}
+
+#DIV_Modificar_Usu:hover .N_update
+{
+    display: block;
+}
+
+#DIV_Modificar_Usu:hover .I_update
+{
+    display: none;
+}
+
+#DIV_Eliminar_Usu:hover .N_delete
+{
+    display: block;
+}
+
+#DIV_Eliminar_Usu:hover .I_delete
+{
+    display: none;
+}
+
+#Bar_Title_Usu
+{
+    background: -webkit-linear-gradient(#fbff00, #737503); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fbff00, #737503); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fbff00, #737503); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fbff00, #737503); /* Standard syntax (must be last) */
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+    position: relative;
+    bottom: 225px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 830px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#block_search_Usu
+{
+    border: solid #E8E8F7;
+    padding-left: 100px;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    background: -webkit-linear-gradient(#fbff00, #737503); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fbff00, #737503); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fbff00, #737503); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fbff00, #737503); /* Standard syntax (must be last) */
+}
+
+#Block_Insert_Usu
+{
+    border: solid #E8E8F7;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    background: -webkit-linear-gradient(#fbff00, #737503); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fbff00, #737503); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fbff00, #737503); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fbff00, #737503); /* Standard syntax (must be last) */
+}
+
+.BtnUsuario
+{
+    padding: 5px 2px 5px 2px;
+    border-radius: 7px;
+    border-color: White;
+    background: -webkit-linear-gradient(#4f5801, #727323); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4f5801, #727323); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4f5801, #727323); /* For Firefox 3.6 to 15 */
+    background: inear-gradient(#4f5801, #727323); /* Standard syntax (must be last) */
+    color: White;
+    width: 110px;
+}
+
+.BtnUsuario:hover
+{
+    padding: 5px 2px 5px 2px;
+    border-radius: 7px;
+    border-color: White;
+    background: -webkit-linear-gradient(#272b01, #353512); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#272b01, #353512); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#272b01, #353512); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#272b01, #353512); /* Standard syntax (must be last) */
+    color: White;
+    width: 110px;
+}
+
+.SelectUsuario
+{
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+    padding: 5px 2px 5px 2px;
+    border-radius: 7px;
+    border-color: White;
+    background: -webkit-linear-gradient(#4f5801, #727323); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4f5801, #727323); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4f5801, #727323); /* For Firefox 3.6 to 15 */
+    background: inear-gradient(#4f5801, #727323); /* Standard syntax (must be last) */
+    color: White;
+    width: 200px;
+}
+
+.SelectUsuario option
+{
+    background: #727323;
+    color: White;
+    border-radius: 7px;
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+}
+
+.ui-widget-header
+{
+    border: 1px solid #fbff00;
+    background: -webkit-linear-gradient(#fbff00, #737503); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fbff00, #737503); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fbff00, #737503); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fbff00, #737503); /* Standard syntax (must be last) */
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+{
+    border: 1px solid #fbff00;
+    background: -webkit-linear-gradient(#fbff00, #737503); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fbff00, #737503); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fbff00, #737503); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fbff00, #737503); /* Standard syntax (must be last) */
+    color: White;
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+}
+
+.ui-widget-content
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #fbff00;
+}
+
+
+/*-----------CONTENIDO DEL ACORDEON ------------------------*/
+.ui-accordion .ui-accordion-content
+{
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #fbff00;
+    padding: 10px 10px;
+    border-radius: 0px 0px 7px 7px;
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+    color: #FFFFFF;
+}
+
+/*-----------ENCABEZADO DEL ACORDEON ------------------------*/
+.ui-accordion .ui-accordion-header
+{
+    border-radius: 7px 7px 0px 0px;
+    border: 1px solid #fbff00;
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.ui-accordion .ui-accordion-header-active
+{
+    color: #FFFFFF;
+    border: 1px solid #fbff00;
+    background: -webkit-linear-gradient(#4f5801, #727323); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4f5801, #727323); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4f5801, #727323); /* For Firefox 3.6 to 15 */
+    background: inear-gradient(#4f5801, #727323); /* Standard syntax (must be last) */
+}
+
+.ui-accordion .ui-accordion-header:hover
+{
+    border: 1px solid #fbff00;
+    color: White;
+    background: -webkit-linear-gradient(#272b01, #353512); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#272b01, #353512); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#272b01, #353512); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#272b01, #353512); /* Standard syntax (must be last) */
+}
+
+.ui-widget-header .ui-state-focus
+{
+    border: 1px solid #fbff00;
+    color: White;
+    background: -webkit-linear-gradient(#fbff00, #737503); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fbff00, #737503); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fbff00, #737503); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fbff00, #737503); /* Standard syntax (must be last) */
+}
+
+.Style_acordion_Lbl
+{
+    color: White;
+    width: 150px;
+    
+}
+
+.Style_acordion_Content
+{
+    background: #333;
+    border-radius: 5px;
+    color: #edff00;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    width: 250px;
+    text-align: center;
+    border: solid 1px;
+    font-size:13px;
+}

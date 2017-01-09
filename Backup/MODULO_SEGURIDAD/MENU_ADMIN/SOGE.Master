@@ -1,0 +1,119 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="SOGE.master.vb" Inherits="MODULO_SEGURIDAD.SOGE" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script type="text/javascript">
+    document.oncontextmenu = function () { return false; }
+    function disableselect(e) {
+        return false;
+    }
+    function reEnable() {
+        return true;
+    }
+    //if IE4+
+    document.onselectstart = new Function("return false");
+    //if NS6 
+    if (window.sidebar) {
+        document.onmousedown = disableselect;
+        document.onclick = reEnable;
+    }
+
+</script>
+<head runat="server">
+    <title></title>
+    <script src="<% = ResolveClientUrl("~/Scripts/jquery-1.4.1.js") %>" type="text/javascript"></script>
+    <script src="<% = ResolveClientUrl("Menu_SA.js") %>" type="text/javascript"></script>
+    <link href="../CSS/Inicio.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/SA_menu.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/Controles.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="window.moveTo(0,0);window.resizeTo(screen.availWidth, screen.availHeight);">
+    <form id="form1" runat="server">
+    <div id="page_menu">
+        <div id="Header" class="header">
+            <div id="Container_title">
+                <table>
+                    <tr>
+                        <td rowspan="3" style="width: 800px;">
+                            <h2 id="titulo_login">
+                                S.O.G.E</h2>
+                        </td>
+                        <td style="text-align: center; width: 300px; color: #ffffff;">
+                            <p>
+                                Usuario</p>
+                        </td>
+                        <td style="text-align: center; width: 200px; color: #ffffff;">
+                            <p>
+                                Rol</p>
+                        </td>
+                        <td rowspan="3" style="text-align: center; width: 80px; color: #ffffff;">
+                            <span class="cssToolTip_ver"><a href="javascript:Exit_SOGE();">
+                                <img alt="exit" title="" style="padding-left: 1em; height: 80px; width: 80px;" id="ImageExit"
+                                    src="../../images/Exit_back.png" /></a> <span>Salida</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="LblUser" class="box_back">
+                        </td>
+                        <td id="LblRol" class="box_back">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="Medium" class="main">
+                <table id="M_Container">
+                    <tr>
+                        <td id="panel_menu">
+                            <div id="container_menu">
+                                <div id="DIV_GruposActividades" class="dimencion" onclick="Redireccion('Actividad');">
+                                    <span class="cssToolTip_ver">
+                                        <p id="P_Actividad" style="color: #ffffff;">
+                                            Grupo y Actividad</p>
+                                        <span>Opción para la administración de grupos y sus actividad Economica</span></span>
+                                </div>
+                                <div id="DIV_PaisCiudad" class="dimencion" onclick="Redireccion('Pais');">
+                                    <span class="cssToolTip_ver">
+                                        <p id="P_Paises" style="color: #ffffff;">
+                                            Paises y Ciudades</p>
+                                        <span>Opción para la administración de paises y sus ciudades</span></span>
+                                </div>
+                                <div id="DIV_Empresa" class="dimencion" onclick="Redireccion('Emp');">
+                                    <span class="cssToolTip_ver">
+                                        <p id="P_Empresa" style="color: #ffffff;">
+                                            Empresas</p>
+                                        <span>Opción para la administración de una empresa</span></span>
+                                </div>
+                                <div id="DIV_Rol" class="dimencion" onclick="Redireccion('Rol');">
+                                    <span class="cssToolTip_ver">
+                                        <p id="P_Rol" style="color: #ffffff;">
+                                            Roles</p>
+                                        <span>Opción para la administración del Rol de un usuario</span></span>
+                                </div>
+                                <div id="DIV_Usuario" class="dimencion" onclick="Redireccion('Usu');">
+                                    <span class="cssToolTip_ver">
+                                        <p id="P_Usuario" style="color: #ffffff;">
+                                            Usarios</p>
+                                        <span>Opción para la administración del Usuario de la aplicación</span></span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <asp:ContentPlaceHolder ID="Main" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

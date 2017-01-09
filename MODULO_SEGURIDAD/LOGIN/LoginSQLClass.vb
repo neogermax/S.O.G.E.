@@ -136,9 +136,10 @@ Public Class LoginSQLClass
     ''' <summary>
     ''' funcion query para la consulta tabla Usuarios para ingreso a la aplicacion
     ''' </summary>
+    ''' <param name="vp_S_User"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    Public Function Read_AllUserLogin()
+    Public Function Read_AllUserLogin(ByVal vp_S_User As String)
 
         Dim objUser As New LoginClass
         Dim ObjListLogin As New List(Of LoginClass)
@@ -148,7 +149,8 @@ Public Class LoginSQLClass
         Dim conexion As String = conex.typeConexion("1")
 
         Dim sql As New StringBuilder
-        sql.Append("SELECT U_Usuario_ID, U_password, U_Estado, U_Rol_ID, U_Usuario_ID FROM USUARIOS")
+        sql.Append(" SELECT U_Usuario_ID, U_password, U_Estado, U_Rol_ID, U_Usuario_ID, U_Multi_IP, U_N_Error_Logeo FROM USUARIOS " & _
+                                " WHERE U_Usuario_ID = '" & UCase(vp_S_User) & "'")
         StrQuery = sql.ToString
 
         ObjListLogin = ListLogin(StrQuery, conexion, "login")
@@ -186,9 +188,10 @@ Public Class LoginSQLClass
     ''' trae el listado solicitado por login
     ''' </summary>
     ''' <param name="vp_S_StrQuery"></param>
+    ''' <param name="vg_S_StrConexion"></param>
+    ''' <param name="vp_S_TypeTrans"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    ''' 
     Public Function ListLogin(ByVal vp_S_StrQuery As String, ByVal vg_S_StrConexion As String, ByVal vp_S_TypeTrans As String)
 
         'inicializamos conexiones a la BD
@@ -215,19 +218,20 @@ Public Class LoginSQLClass
             If vp_S_TypeTrans = "SA" Then
 
                 'cargamos datos sobre el objeto de user
-                objUser.Name = ReadConsulta.GetString(0)
-                objUser.Descrip_Rol = ReadConsulta.GetString(1)
-                objUser.Estado = ReadConsulta.GetString(2)
-                objUser.Rol = ReadConsulta.GetString(3)
-                objUser.NameUser = ReadConsulta.GetString(4)
-
+                objUser.Name = ReadConsulta.GetValue(0)
+                objUser.Descrip_Rol = ReadConsulta.GetValue(1)
+                objUser.Estado = ReadConsulta.GetValue(2)
+                objUser.Rol = ReadConsulta.GetValue(3)
+                objUser.NameUser = ReadConsulta.GetValue(4)
             Else
                 'cargamos datos sobre el objeto de login
-                objUser.Name = ReadConsulta.GetString(0)
-                objUser.Password = ReadConsulta.GetString(1)
-                objUser.Estado = ReadConsulta.GetString(2)
-                objUser.Rol = ReadConsulta.GetString(3)
-                objUser.NameUser = ReadConsulta.GetString(4)
+                objUser.Name = ReadConsulta.GetValue(0)
+                objUser.Password = ReadConsulta.GetValue(1)
+                objUser.Estado = ReadConsulta.GetValue(2)
+                objUser.Rol = ReadConsulta.GetValue(3)
+                objUser.NameUser = ReadConsulta.GetValue(4)
+                objUser.Multi_IP = ReadConsulta.GetValue(5)
+                objUser.N_Error_Logeo = ReadConsulta.GetValue(6)
 
             End If
 

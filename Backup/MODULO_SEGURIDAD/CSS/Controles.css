@@ -1,0 +1,161 @@
+﻿input
+{
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    border-radius: 3px;
+}
+
+input[type='text'], input[type='password']
+{
+    border: none;
+    padding: 2px 0px 2px 8px;
+    border-radius: 3px;
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+}
+
+/*fuente para todos los campos*/
+h1, h2, h3, h4, table, tr, td
+{
+    font-family: "Century Gothic" , CenturyGothic, AppleGothic, sans-serif;
+}
+
+
+/* Clase que tendra el tooltip */
+.cssToolTip_ver
+{
+    position: relative; /* Esta clase tiene que tener posicion relativa */
+    color: #caff00; /* Color del texto */
+}
+
+/* El tooltip */
+.cssToolTip_ver span
+{
+    background: rgba(20,20,20,0.7);
+    border: 2px solid #caff00;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #333;
+    color: #caff00;
+    display: none; /* El tooltip por defecto estara oculto */
+    font-size: 0.8em;
+    padding: 10px 10px 10px 10px;
+    max-width: 6000px;
+    position: absolute; /* El tooltip se posiciona de forma absoluta para no modificar el aspezto del resto de la pagina */
+    top: 30px; /* Posicion apartir de la parte superior del primer elemento padre con posicion relativa */
+    left: 10px; /* Posicion apartir de la parte izquierda del primer elemento padre con posicion relativa */
+    z-index: 1000; /* Poner un z-index alto para que aparezca por encima del resto de elementos */
+}
+
+/* El tooltip cuando se muestra */
+.cssToolTip_ver:hover span
+{
+    display: inline; /* Para mostrarlo simplemente usamos display block por ejemplo */
+}
+
+
+/* Clase que tendra el tooltip */
+.cssToolTip_ver_R
+{
+    position: relative; /* Esta clase tiene que tener posicion relativa */
+    color: #caff00; /* Color del texto */
+}
+
+/* El tooltip */
+.cssToolTip_ver_R span
+{
+    background: rgba(20,20,20,0.7);
+    border: 2px solid #caff00;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #333;
+    color: #caff00;
+    display: none; /* El tooltip por defecto estara oculto */
+    font-size: 0.8em;
+    padding: 10px 10px 10px 10px;
+    max-width: 6000px;
+    position: absolute; /* El tooltip se posiciona de forma absoluta para no modificar el aspezto del resto de la pagina */
+    top: 30px; /* Posicion apartir de la parte superior del primer elemento padre con posicion relativa */
+    right: 10px; /* Posicion apartir de la parte izquierda del primer elemento padre con posicion relativa */
+    z-index: 1000; /* Poner un z-index alto para que aparezca por encima del resto de elementos */
+}
+
+/* El tooltip cuando se muestra */
+.cssToolTip_ver_R:hover span
+{
+    display: inline; /* Para mostrarlo simplemente usamos display block por ejemplo */
+}
+
+/* Clase que tendra el tooltip Left */
+.cssToolTip_L
+{
+    position: relative; /* Esta clase tiene que tener posicion relativa */
+    color: #F7170F; /* Color del texto */
+}
+
+/* El tooltip */
+.cssToolTip_L span
+{
+    background: rgba(20,20,20,0.9) url('../../images/alert.png') center left 5px no-repeat;
+    border: 2px solid #F7170F;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #333;
+    color: #F7170F;
+    display: none; /* El tooltip por defecto estara oculto */
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 10px 10px 50px;
+    max-width: 6000px;
+    position: absolute; /* El tooltip se posiciona de forma absoluta para no modificar el aspezto del resto de la pagina */
+    top: 15px; /* Posicion apartir de la parte superior del primer elemento padre con posicion relativa */
+    left: 10px; /* Posicion apartir de la parte izquierda del primer elemento padre con posicion relativa */
+    z-index: 1000; /* Poner un z-index alto para que aparezca por encima del resto de elementos */
+}
+
+/* El tooltip cuando se muestra */
+.cssToolTip_L:hover span
+{
+    display: inline; /* Para mostrarlo simplemente usamos display block por ejemplo */
+}
+
+/* Clase que tendra el tooltip Left */
+.cssToolTip_R
+{
+    position: relative; /* Esta clase tiene que tener posicion relativa */
+    color: #F7170F; /* Color del texto */
+}
+
+/* El tooltip */
+.cssToolTip_R span
+{
+    background: rgba(20,20,20,0.9) url('../../images/alert.png') center left 5px no-repeat;
+    border: 2px solid #F7170F;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #333;
+    color: #F7170F;
+    display: none; /* El tooltip por defecto estara oculto */
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 10px 10px 50px;
+    max-width: 6000px;
+    position: absolute; /* El tooltip se posiciona de forma absoluta para no modificar el aspezto del resto de la pagina */
+    top: 15px; /* Posicion apartir de la parte superior del primer elemento padre con posicion relativa */
+    right: 10px; /* Posicion apartir de la parte izquierda del primer elemento padre con posicion relativa */
+    z-index: 1000; /* Poner un z-index alto para que aparezca por encima del resto de elementos */
+}
+
+/* El tooltip cuando se muestra */
+.cssToolTip_R:hover span
+{
+    display: inline; /* Para mostrarlo simplemente usamos display block por ejemplo */
+}
+
+.ImageError
+{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    bottom: 50%;
+}
+
+

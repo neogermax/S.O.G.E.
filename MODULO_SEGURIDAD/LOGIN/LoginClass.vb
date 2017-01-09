@@ -8,11 +8,11 @@ Public Class LoginClass
     Private _Rol As String
     Private _Session As String
     Private _Cantidad As Integer
+    Private _Multi_IP As String
+    Private _N_Error_Logeo As Integer
 
     Private _NameUser As String
     Private _Descrip_Rol As String
-
-
 #End Region
 
 #Region "propiedades"
@@ -62,6 +62,22 @@ Public Class LoginClass
         End Get
         Set(ByVal value As Integer)
             Me._Cantidad = value
+        End Set
+    End Property
+    Public Property Multi_IP() As String
+        Get
+            Return Me._Multi_IP
+        End Get
+        Set(ByVal value As String)
+            Me._Multi_IP = value
+        End Set
+    End Property
+    Public Property N_Error_Logeo() As Integer
+        Get
+            Return Me._N_Error_Logeo
+        End Get
+        Set(ByVal value As Integer)
+            Me._N_Error_Logeo = value
         End Set
     End Property
 

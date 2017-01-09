@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{B30C39D9-649A-493A-B47A-9DBF3302DF8F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MODULO_SEGURIDAD</RootNamespace>
+    <AssemblyName>MODULO_SEGURIDAD</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MODULO_SEGURIDAD.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MODULO_SEGURIDAD.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADMIN_GT\Empresa\Empresa.aspx" />
+    <Content Include="ADMIN_GT\Empresa\Empresa.js" />
+    <Content Include="ADMIN_GT\Empresa\EmpresaAjax.aspx" />
+    <Content Include="ADMIN_GT\Empresa\TransactionAjax.js" />
+    <Content Include="ADMIN_GT\GruposActividades\GruposActividades.aspx" />
+    <Content Include="ADMIN_GT\GruposActividades\GruposActividades.js" />
+    <Content Include="ADMIN_GT\GruposActividades\GruposActividadesAjax.aspx" />
+    <Content Include="ADMIN_GT\GruposActividades\TransactionAjax.js" />
+    <Content Include="ADMIN_GT\PaisesCiudades\PaisesCiudades.aspx" />
+    <Content Include="ADMIN_GT\PaisesCiudades\PaisesCiudades.js" />
+    <Content Include="ADMIN_GT\PaisesCiudades\PaisesCiudadesAjax.aspx" />
+    <Content Include="ADMIN_GT\PaisesCiudades\TransactionAjax.js" />
+    <Content Include="ADMIN_GT\Rol\Rol.aspx" />
+    <Content Include="ADMIN_GT\Rol\Rol.js" />
+    <Content Include="ADMIN_GT\Rol\RolAjax.aspx" />
+    <Content Include="ADMIN_GT\Rol\TransactionAjax.js" />
+    <Content Include="ADMIN_GT\Usuarios\TransactionAjax.js" />
+    <Content Include="ADMIN_GT\Usuarios\Usuario.aspx" />
+    <Content Include="ADMIN_GT\Usuarios\Usuario.js" />
+    <Content Include="ADMIN_GT\Usuarios\UsuarioAjax.aspx" />
+    <Content Include="CSS\Chosen\chosen-sprite%402x.png" />
+    <Content Include="CSS\Chosen\chosen-sprite.png" />
+    <Content Include="CSS\Chosen\chosen.css" />
+    <Content Include="CSS\Chosen\chosen.png" />
+    <Content Include="CSS\Chosen\oss-credit.png" />
+    <Content Include="CSS\Chosen\prism.css" />
+    <Content Include="CSS\Chosen\style.css" />
+    <Content Include="CSS\ComboBox\ComboBox.css" />
+    <Content Include="CSS\Controles.css" />
+    <Content Include="CSS\datatables\images\back_disabled.png" />
+    <Content Include="CSS\datatables\images\back_enabled.png" />
+    <Content Include="CSS\datatables\images\back_enabled_hover.png" />
+    <Content Include="CSS\datatables\images\favicon.ico" />
+    <Content Include="CSS\datatables\images\forward_disabled.png" />
+    <Content Include="CSS\datatables\images\forward_enabled.png" />
+    <Content Include="CSS\datatables\images\forward_enabled_hover.png" />
+    <Content Include="CSS\datatables\images\sort_asc.png" />
+    <Content Include="CSS\datatables\images\sort_asc_disabled.png" />
+    <Content Include="CSS\datatables\images\sort_both.png" />
+    <Content Include="CSS\datatables\images\sort_desc.png" />
+    <Content Include="CSS\datatables\images\sort_desc_disabled.png" />
+    <Content Include="CSS\datatables\jquery.dataTables.css" />
+    <Content Include="CSS\datatables\jquery.dataTables_themeroller.css" />
+    <Content Include="CSS\Dialog\images\animated-overlay.gif" />
+    <Content Include="CSS\Dialog\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="CSS\Dialog\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="CSS\Dialog\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="CSS\Dialog\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="CSS\Dialog\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="CSS\Dialog\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="CSS\Dialog\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="CSS\Dialog\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="CSS\Dialog\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="CSS\Dialog\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="CSS\Dialog\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="CSS\Dialog\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="CSS\Dialog\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="CSS\Dialog\jquery-ui-1.10.4.custom.css" />
+    <Content Include="CSS\Dialog\jquery-ui.css" />
+    <Content Include="CSS\Inicio.css" />
+    <Content Include="CSS\SA_menu.css" />
+    <Content Include="CSS\S_Admin\Admin_Empresa.css" />
+    <Content Include="CSS\S_Admin\Admin_GruposActividades.css" />
+    <Content Include="CSS\S_Admin\Admin_GT.css" />
+    <Content Include="CSS\Slider\skitter.styles.css" />
+    <Content Include="CSS\Slider\skitter.styles.min.css" />
+    <Content Include="CSS\Slider\styles.css" />
+    <Content Include="CSS\S_Admin\Admin_PaisesCiudades.css" />
+    <Content Include="CSS\S_Admin\Admin_Roles.css" />
+    <Content Include="CSS\S_Admin\Admin_Usuario.css" />
+    <Content Include="images\activo.png" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\alert.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\Error_Sucess.png" />
+    <Content Include="images\example\001.jpg" />
+    <Content Include="images\example\002.jpg" />
+    <Content Include="images\example\003.jpg" />
+    <Content Include="images\example\004.jpg" />
+    <Content Include="images\Exit_back.png" />
+    <Content Include="images\Exit_hover.png" />
+    <Content Include="images\eye.png" />
+    <Content Include="images\Full_Sucess.png" />
+    <Content Include="images\inactivo.png" />
+    <Content Include="images\new.png" />
+    <Content Include="images\refresh.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\sprite-clean.png" />
+    <Content Include="images\sprite-default.png" />
+    <Content Include="images\sprite-minimalist.png" />
+    <Content Include="images\sprite-round.png" />
+    <Content Include="images\sprite-square.png" />
+    <Content Include="images\Val_Error.png" />
+    <Content Include="images\Warning_Sucess.png" />
+    <Content Include="JS\Chosen\chosen.jquery.js" />
+    <Content Include="JS\Chosen\chosen.jquery.min.js" />
+    <Content Include="JS\Chosen\prism.js" />
+    <Content Include="JS\ComboBox\ComboBox.js" />
+    <Content Include="JS\Dialog\datepicker.js" />
+    <Content Include="JS\Dialog\jquery-1.10.2.js" />
+    <Content Include="JS\Dialog\jquery-ui-1.10.4.custom.js" />
+    <Content Include="JS\Dialog\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="JS\Dialog\jquery-ui.js" />
+    <Content Include="JS\Datatable\jquery.dataTables.min.js" />
+    <Content Include="JS\Global\GT_Global.js" />
+    <Content Include="JS\Slider\jquery-2.1.1.min.js" />
+    <Content Include="JS\Slider\jquery.easing.1.3.js" />
+    <Content Include="JS\Slider\jquery.skitter.js" />
+    <Content Include="JS\Slider\jquery.skitter.min.js" />
+    <Content Include="LOGIN\Login.aspx" />
+    <Content Include="LOGIN\Login.js" />
+    <Content Include="LOGIN\LoginAjax.aspx" />
+    <Content Include="LOGIN\TransactionAjax.js" />
+    <Content Include="MENU_ADMIN\Menu_SA.aspx" />
+    <Content Include="MENU_ADMIN\Menu_SA.js" />
+    <Content Include="MENU_ADMIN\Menu_SA_Ajax.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN_GT\Empresa\Empresa.aspx.designer.vb">
+      <DependentUpon>Empresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_GT\Empresa\Empresa.aspx.vb">
+      <DependentUpon>Empresa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN_GT\Empresa\EmpresaAjax.aspx.designer.vb">
+      <DependentUpon>EmpresaAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_GT\Empresa\EmpresaAjax.aspx.vb">
+      <DependentUpon>EmpresaAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN_GT\Empresa\EmpresaClass.vb" />
+    <Compile Include="ADMIN_GT\Empresa\EmpresaSQLClass.vb" />
+    <Compile Include="ADMIN_GT\GruposActividades\GruposActividades.aspx.designer.vb">
+      <DependentUpon>GruposActividades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_GT\GruposActividades\GruposActividades.aspx.vb">
+      <DependentUpon>GruposActividades.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN_GT\GruposActividades\GruposActividadesAjax.aspx.designer.vb">
+      <DependentUpon>GruposActividadesAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_GT\GruposActividades\GruposActividadesAjax.aspx.vb">
+      <DependentUpon>GruposActividadesAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN_GT\GruposActividades\GruposActividadesClass.vb" />
+    <Compile Include="ADMIN_GT\GruposActividades\GruposActividadesSQLClass.vb" />
+    <Compile Include="ADMIN_GT\PaisesCiudades\PaisesCiudades.aspx.designer.vb">
+      <DependentUpon>PaisesCiudades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_GT\PaisesCiudades\PaisesCiudades.aspx.vb">
+      <DependentUpon>PaisesCiudades.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN_GT\PaisesCiudades\PaisesCiudadesAjax.aspx.designer.vb">
+      <DependentUpon>PaisesCiudadesAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_GT\PaisesCiudades\PaisesCiudadesAjax.aspx.vb">
+      <DependentUpon>PaisesCiudadesAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN_GT\PaisesCiudades\PaisesCiudadesClass.vb" />
+    <Compile Include="ADMIN_GT\PaisesCiudades\PaisesCiudadesSQLClass.vb" />
+    <Compile Include="ADMIN_GT\Rol\Rol.aspx.designer.vb">
+      <DependentUpon>Rol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_GT\Rol\Rol.aspx.vb">
+      <DependentUpon>Rol.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN_GT\Rol\RolAjax.aspx.designer.vb">
+      <DependentUpon>RolAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_GT\Rol\RolAjax.aspx.vb">
+      <DependentUpon>RolAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN_GT\Rol\RolClass.vb" />
+    <Compile Include="ADMIN_GT\Rol\RolSQLClass.vb" />
+    <Compile Include="ADMIN_GT\Usuarios\Usuario.aspx.designer.vb">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_GT\Usuarios\Usuario.aspx.vb">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN_GT\Usuarios\UsuarioAjax.aspx.designer.vb">
+      <DependentUpon>UsuarioAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_GT\Usuarios\UsuarioAjax.aspx.vb">
+      <DependentUpon>UsuarioAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN_GT\Usuarios\UsuarioClass.vb" />
+    <Compile Include="ADMIN_GT\Usuarios\UsuarioSQLClass.vb" />
+    <Compile Include="conexion_BD\Conector.vb" />
+    <Compile Include="encriptracion\EncriptarClass.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LOGIN\LoginAjax.aspx.designer.vb">
+      <DependentUpon>LoginAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN\LoginAjax.aspx.vb">
+      <DependentUpon>LoginAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LOGIN\LoginClass.vb" />
+    <Compile Include="LOGIN\LoginSQLClass.vb" />
+    <Compile Include="MENU_ADMIN\Menu_SA.aspx.designer.vb">
+      <DependentUpon>Menu_SA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MENU_ADMIN\Menu_SA.aspx.vb">
+      <DependentUpon>Menu_SA.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MENU_ADMIN\Menu_SA_Ajax.aspx.designer.vb">
+      <DependentUpon>Menu_SA_Ajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MENU_ADMIN\Menu_SA_Ajax.aspx.vb">
+      <DependentUpon>Menu_SA_Ajax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MENU_ADMIN\SOGE.Master.designer.vb">
+      <DependentUpon>SOGE.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MENU_ADMIN\SOGE.Master.vb">
+      <DependentUpon>SOGE.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProccesGlobal\Droplist_Class.vb" />
+    <Compile Include="ProccesGlobal\GeneralSQLClass.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CSS\datatables\images\Sorting icons.psd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="MENU_ADMIN\SOGE.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2969</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

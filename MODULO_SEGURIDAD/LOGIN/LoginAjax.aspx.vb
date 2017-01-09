@@ -51,7 +51,15 @@
         'llamamos al procedimiento de encripcion
         vl_S_password = Encrip.Encriptacion_MD5(vl_S_password)
         'llamamos modulo de consultas SQL(todos los usuarios) 
-        ObjListLogin = SQL_Login.Read_AllUserLogin()
+        ObjListLogin = SQL_Login.Read_AllUserLogin(vl_S_user)
+
+
+        If ObjListLogin.Count <> 0 Then
+
+        Else
+            vl_I_resultado = 2 'no existe usuario
+        End If
+
         'recorremos la lista de la consulta
         For Each row In ObjListLogin
             'verificamos el usuario exista
