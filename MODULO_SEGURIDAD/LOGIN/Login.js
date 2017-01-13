@@ -1,4 +1,7 @@
 ﻿var Home;
+var option_value;
+var Number_intentos;
+var Number_Errores = 0;
 
 $(document).ready(function () {
 
@@ -91,7 +94,6 @@ function VerPassword() {
     });
 
 }
-
 
 //funcion que valida si los campos de la contraseña son igules soi no bloquea boton cambiar
 function ValidarCamposIguales() {

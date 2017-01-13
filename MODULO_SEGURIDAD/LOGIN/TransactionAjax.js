@@ -1,71 +1,83 @@
 ﻿
 //hacemos la transaccion al code behind por medio de Ajax
-function transacionAjax(State) {
+function transacionAjax(vp_State) {
     $.ajax({
         url: "LoginAjax.aspx",
         type: "POST",
         //crear json
-        data: { "action": State,
+        data: {
+            "action": vp_State,
             "user": $("#TxtUser").val(),
             "password": $("#TxtPassword").val()
         },
         //Transaccion Ajax en proceso
         success: function (result) {
-            result = JSON.parse(result);
+            var pos = result.indexOf("_");
 
-            switch (result) {
+            if (pos == -1)
+                option_value = result;
+            else {
+                var Str_result = result.split("_");
+                option_value = Str_result[0];
+                Number_intentos = Str_result[1];
+            }
 
-                case 0: //ingresa
+            switch (option_value) {
+
+                case "0": //ingresa
                     Home = 0;
                     tansaccionAjax_val('Val');
                     break;
-                case 1: //contraseña incorrecta
+                case "1": //contraseña incorrecta
                     $("#TxtUser").val("Usuario incorrecto");
                     $("#TxtUser").css("color", "#C33");
                     $("#TxtPassword").attr("type", "text");
                     $("#TxtPassword").val("*Contraseña incorrecta");
                     $("#TxtPassword").css("color", "#C33");
                     break;
-                case 2: //no existe usuario
+                case "2": //no existe usuario
                     $("#TxtUser").val("*Usuario incorrecto");
                     $("#TxtUser").css("color", "#C33");
                     $("#TxtPassword").attr("type", "text");
                     $("#TxtPassword").val("Contraseña incorrecta");
                     $("#TxtPassword").css("color", "#C33");
                     break;
-                case 3: // cambio de contraseña
+                case "3": // cambio de contraseña
                     $("#Dialog_Reset").dialog("option", "title", "Cambio de Contraseña");
                     $("#Dialog_Reset").dialog("open");
                     break
-                case 4: //usuario deshabilitado
-                    $("#Dialog_emergente").dialog("option", "title", "Desactivado!");
-                    $("#Mensaje_alert").text("El usuario esta deshabilitado comuniquese con el administrador del sistema");
-                    $("#Dialog_emergente").dialog("open");
-                    $("#I_S").css("display", "none");
-                    $("#I_E").css("display", "none");
-                    $("#I_W").css("display", "block");
-
+                case "4": //usuario deshabilitado
+                    Mensaje_Global("Desactivado!", "El usuario esta deshabilitado comuniquese con el administrador del sistema", "W");
                     break;
-                case 5: //ingrea a crear empresa
+
+                case "5": //ingresa a crear empresa
                     Home = 5;
                     tansaccionAjax_val('Val');
+                    break;
 
+                case "6":  //usuario en varias empresas
+                    Mensaje_Global("Tiene Multiple Empresas!", "El usuario debe selecciona una de las empresa", "W");
+                    break;
+
+                case "7":  //usuario en varias empresas
+                    Mensaje_Global("Numero de intentos", "El usuario ha realizado un error precaución puede bloquear su cuenta, maximo de intentos(" + Number_intentos + ")", "W");
+                    Number_Errores = Number_Errores + 1;
+                    console.log(Number_Errores);
+                    if (Number_Errores == Number_intentos) {
+                        tansaccionAjax_BloqueoUsuario("Bloquear_Error");
+                    }
                     break;
             }
 
         },
         error: function () {
-            $("#Dialog_emergente").dialog("option", "title", "Disculpenos :(");
-            $("#Mensaje_alert").text("Se genero error al realizar la transacción Ajax!");
-            $("#Dialog_emergente").dialog("open");
-
+            Mensaje_Global("Disculpenos :(", "Se genero error al realizar la transacción Ajax!", "E");
         }
     });
 }
 
-
 //hacemos la transaccion al code behind por medio de Ajax
-function tansaccionAjax_Reset(State) {
+function tansaccionAjax_Reset(vp_State) {
 
     var user = $("#TxtUser").val();
 
@@ -73,52 +85,37 @@ function tansaccionAjax_Reset(State) {
         url: "LoginAjax.aspx",
         type: "POST",
         //crear json
-        data: { "action": State,
+        data: {
+            "action": vp_State,
             "user": user.toUpperCase(),
             "password": $('#txtPassword_C').val()
         },
         //Transaccion Ajax en proceso
         success: function (result) {
             if (result == "Sucess") {
-                $("#Dialog_emergente").dialog("option", "title", "Exito");
-                $("#Mensaje_alert").text("La contraseña ha sido renovada!");
-                $("#Dialog_emergente").dialog("open");
+                Mensaje_Global("Exito", "La contraseña ha sido renovada!", "S");
                 $("#Dialog_Reset").dialog("close");
-                $("#I_S").css("display", "block");
-                $("#I_E").css("display", "none");
-                $("#I_W").css("display", "none");
                 ClearPrincipal();
             }
-            else {
-                $("#Dialog_emergente").dialog("option", "title", "Disculpenos");
-                $("#Mensaje_alert").text("La contraseña no fue renovada, consulte con su administrador!");
-                $("#Dialog_emergente").dialog("open");
-                $("#I_S").css("display", "none");
-                $("#I_E").css("display", "block");
-                $("#I_W").css("display", "none");
-            }
-
+            else
+                Mensaje_Global("Disculpenos", "La contraseña no fue renovada, consulte con su administrador!", "E");
         },
         error: function () {
-            $("#Dialog_emergente").dialog("option", "title", "Disculpenos :(");
-            $("#Mensaje_alert").text("Se genero error al realizar la transacción Ajax!");
-            $("#Dialog_emergente").dialog("open");
-            $("#I_S").css("display", "none");
-            $("#I_E").css("display", "block");
-            $("#I_W").css("display", "none");
+            Mensaje_Global("Disculpenos :(", "Se genero error al realizar la transacción Ajax!", "E");
         }
     });
 }
 
 //hacemos la transaccion al code behind por medio de Ajax
-function tansaccionAjax_val(State) {
+function tansaccionAjax_val(vp_State) {
     var user = $("#TxtUser").val();
 
     $.ajax({
         url: "LoginAjax.aspx",
         type: "POST",
         //crear json
-        data: { "action": State,
+        data: {
+            "action": vp_State,
             "user": user.toUpperCase()
         },
         //Transaccion Ajax en proceso
@@ -136,11 +133,13 @@ function tansaccionAjax_val(State) {
 
         },
         error: function () {
-            $("#Dialog_emergente").dialog("option", "title", "Disculpenos :(");
-            $("#Mensaje_alert").text("Se genero error al realizar la transacción Ajax!");
-            $("#Dialog_emergente").dialog("open");
+            Mensaje_Global("Disculpenos :(", "Se genero error al realizar la transacción Ajax!", "E");
         }
     });
 
 }
 
+//hacemos la transaccion al code behind por medio de Ajax
+function tansaccionAjax_BloqueoUsuario(vp_State) {
+    Mensaje_Global("Bloqueado!", "El usuario (" + $("#TxtUser").val() + ") fue bloqueado por sobre pasar la cantidad de intentos fallidos(" + Number_intentos + "), comuniquese con el administrador del sistema", "W");
+}

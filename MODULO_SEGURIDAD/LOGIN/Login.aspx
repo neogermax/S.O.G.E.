@@ -11,7 +11,9 @@
     <script src="../JS/Dialog/jquery-ui.js" type="text/javascript"></script>
     <link href="../CSS/Inicio.css" rel="stylesheet" type="text/css" />
     <link href="../CSS/Controles.css" rel="stylesheet" type="text/css" />
+    <script src="../JS/Chosen/chosen.jquery.js" type="text/javascript"></script>
     <link href="../CSS/Dialog/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css" />
+    <script src="../JS/Global/GT_Global.js" type="text/javascript"></script>
     <script src="Login.js" type="text/javascript"></script>
     <script src="TransactionAjax.js" type="text/javascript"></script>
     <title></title>

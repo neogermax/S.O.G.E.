@@ -6,6 +6,8 @@
         If Request.Form("action") <> Nothing Then
             'aterrizamos las opciones del proceso
             Dim vl_S_option_login As String = Request.Form("action")
+            Session("N_Intentos") = 0
+            Session("N_Errores") = 0
 
             Select Case vl_S_option_login
 
@@ -29,15 +31,8 @@
     ''' <remarks></remarks>
     Protected Sub ingresar()
 
-        Dim vl_S_user, vl_S_password, vl_S_userEncrip As String
-        Dim vl_B_existeUsuario As Boolean
-        Dim vl_B_passwordCorrecto As Boolean
-        Dim vl_B_cambioPassword As Boolean
-        Dim vl_B_Estado As Boolean
-        Dim vl_B_SA As Boolean
-
-        Dim vl_I_resultado As Integer
-
+        Dim vl_S_user, vl_S_password, vl_S_userEncrip, vl_S_Empresa As String
+        Dim vl_I_resultado As String
 
         Dim Encrip As New EncriptarClass
         Dim SQL_Login As New LoginSQLClass
@@ -46,6 +41,7 @@
 
         vl_S_user = Request.Form("user").ToString()
         vl_S_userEncrip = Encrip.Encriptacion_MD5(UCase(vl_S_user))
+        '  vl_S_Empresa = Request.Form("Empresa_ID").ToString()
 
         vl_S_password = Request.Form("password").ToString()
         'llamamos al procedimiento de encripcion
@@ -54,70 +50,26 @@
         ObjListLogin = SQL_Login.Read_AllUserLogin(vl_S_user)
 
 
-        If ObjListLogin.Count <> 0 Then
+        Select Case ObjListLogin.Count
 
-        Else
-            vl_I_resultado = 2 'no existe usuario
-        End If
+            Case 0
+                vl_I_resultado = 2 'no existe usuario
 
-        'recorremos la lista de la consulta
-        For Each row In ObjListLogin
-            'verificamos el usuario exista
-            If row.Name = UCase(vl_S_user) Then
-                vl_B_existeUsuario = True
-                'verificamos que el password sea igual al usuario para cambio de clave
-                If row.Password = vl_S_userEncrip Then
-                    vl_B_cambioPassword = True
-                    Exit For
-                End If
-                'verificamos el estado del usuario
-                If row.Estado = "2" Then
-                    vl_B_Estado = True
-                    Exit For
-                End If
-                'verificamos que el password sea correcto
-                If row.Password = vl_S_password Then
-                    vl_B_passwordCorrecto = True
-                    If row.Rol = "S_ADMIN" Then
-                        vl_B_SA = True
-                    End If
-                    Exit For
-                Else
-                    vl_B_passwordCorrecto = False
-                    Exit For
-                End If
+            Case 1
+                vl_I_resultado = Valida_Ingreso(ObjListLogin, vl_S_userEncrip, vl_S_password)
 
-            Else
-                vl_B_existeUsuario = False
-            End If
-        Next
-        'validamos consulta para devolver resultado al json
-        If vl_B_existeUsuario = False Then
-            vl_I_resultado = 2 'no existe usuario
-        Else
-            If vl_B_cambioPassword = True Then
-                vl_I_resultado = 3 'cambio de password
-                GoTo salto
-            End If
-            If vl_B_Estado = True Then
-                vl_I_resultado = 4 'usuario deshabilitado
-                GoTo salto
-            End If
-            If vl_B_passwordCorrecto = False Then
-                vl_I_resultado = 1 ' contraseña incorrecta
-            Else
-                If vl_B_SA = False Then
-                    vl_I_resultado = 0 'ingreso usuario
-                Else
-                    vl_I_resultado = 5 'ingreso a super menu
-                End If
+            Case Else
+                vl_I_resultado = 6 'ususario en varias empresas
 
-            End If
-        End If
-salto:
+        End Select
+
+
         Response.Write(vl_I_resultado)
 
     End Sub
+
+
+
 
     ''' <summary>
     ''' funcion que ejecuta el proceso de cambio de clave
@@ -166,4 +118,47 @@ salto:
         Response.Write(TokenEncrip)
 
     End Sub
+
+#Region "FUNCIONES"
+
+    Private Function Valida_Ingreso(ByVal vp_Obj_User As List(Of LoginClass), ByVal vp_S_userEncrip As String, ByVal vp_S_password As String)
+
+        Dim Result As String = ""
+        'recorremos la lista de la consulta
+        For Each item In vp_Obj_User
+
+            'verificamos que el password sea igual al usuario para cambio de clave
+            If item.Password = vp_S_userEncrip Then
+                Result = 3 'cambio de password
+                Exit For
+            End If
+
+            'verificamos el estado del usuario
+            If item.Estado = "2" Then
+                Result = 4 'usuario deshabilitado
+                Exit For
+            End If
+
+            'verificamos que el password sea correcto
+            If item.Password = vp_S_password Then
+                Result = 0 'ingreso usuario
+                If item.Rol = "S_ADMIN" Then
+                    Result = 5 'ingreso a super menu
+                End If
+                Exit For
+            Else
+                Result = 1 ' contraseña incorrecta
+                If item.N_Error_Logeo <> 0 Then
+                    Result = 7 ' requiere conteo de errores de contraseña
+                    Result = Result & "_" & item.N_Error_Logeo
+                    Exit For
+                End If
+            End If
+        Next
+
+        Return Result
+    End Function
+
+#End Region
+
 End Class
